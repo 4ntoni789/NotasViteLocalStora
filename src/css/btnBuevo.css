@@ -1,0 +1,39 @@
+.contNav {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-right: 10px;
+}
+.contNav__link {
+  font-size: 30px;
+  color: #ccc;
+  transition: color 0.5s;
+}
+.contNav__link:hover {
+  color: #e3cf01;
+}
+.contNav .active {
+  color: #e3cf01;
+}
+
+.contBtnPlus {
+  background-color: #e3cf01;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.contBtnPlus__ico {
+  font-size: 40px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=btnBuevo.css.map */

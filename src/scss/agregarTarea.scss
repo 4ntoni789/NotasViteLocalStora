@@ -1,0 +1,62 @@
+@use"navegacion";
+.contModalAgregarTarea{
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    transform: translateX(1400px);
+    transition: all 2s;
+    &__imp{
+        width: 100%;
+        margin-top: 30px;
+        height: 40px;
+        border: none;
+        background-color: #000;
+        padding-left: 20px;
+        font-size: 30px;
+        color: #fff;
+        outline: none;
+    }
+    &__fechaCreacion{
+        color: #fff;
+        margin-left: 20px;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &__Texta{
+        width: 100%;
+        margin-left: 20px;
+        outline: none;  
+        font-size: 30px;
+        background-color: #000;
+        border: none;
+        color: #fff;
+        height: 100%;
+    }
+    &__divBtnGuardar{
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        cursor: pointer;
+        transition: color .3s;
+        &:hover{
+            color:navegacion.$colorActiveNav ;
+        }
+    }
+}
+.contModalAgregarTareaActive{
+    transform: translateX(0px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #000;
+    transition: all 1s;
+    z-index: 100;
+}

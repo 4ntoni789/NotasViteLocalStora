@@ -1,0 +1,144 @@
+.contTareaItem {
+  width: 70%;
+  height: 13%;
+  background-color: #444;
+  margin: auto;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  position: relative;
+}
+.contTareaItem__tituloTarea {
+  color: #eee;
+  user-select: none;
+}
+.contTareaItem__tarea {
+  color: #ccc;
+  margin: 5px 0 5px 0;
+  overflow: hidden;
+}
+.contTareaItem__fecha {
+  color: #aaa;
+}
+.contTareaItem__btnBorrar {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  border-radius: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(10px);
+}
+.contTareaItem__btnBorrar__ico {
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+}
+.contTareaItem__btnBorrar__active {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  border-radius: 30px;
+  height: 30px;
+  bottom: 60px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(40px);
+  transition: all 0.3s;
+  user-select: none;
+}
+.contTareaItem__btnBorrar__active:active {
+  background-color: #f00;
+}
+.contTareaItem__btnAbrir {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  border-radius: 30px;
+  height: 30px;
+  top: 60px;
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: translateX(10px);
+}
+.contTareaItem__btnAbrir__active {
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  border-radius: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(40px);
+  transition: all 0.3s;
+  user-select: none;
+}
+.contTareaItem__btnAbrir__active:active {
+  background-color: #f00;
+}
+.contTareaItem__active {
+  width: 60%;
+  height: 11%;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  background-color: #777;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  position: relative;
+}
+.contTareaItem__remove {
+  width: 70%;
+  height: 13%;
+  background-color: #444;
+  margin: auto;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=tareaItem.css.map */

@@ -1,0 +1,20 @@
+$colorActiveNav:#e3cf01;
+.contNav{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-right: 10px;
+    &__link{
+        font-size: 30px;
+        color: #ccc;
+        transition: color .5s;
+        &:hover{
+            color: $colorActiveNav;
+        }
+    }
+    .active{
+        color:$colorActiveNav ;
+    }
+}

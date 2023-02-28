@@ -1,0 +1,33 @@
+@use"navegacion";
+.contInicio{
+    background-color: #000;
+    margin: 0;
+    &__BntTodos {
+        color: #fff;
+        width: 100%;
+        display: flex;
+        &__todos {
+            margin-left: 10px;
+            height: 30px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 10px;
+            font-size: 14px;
+            width: 40px;
+            background-color: #555;
+            border: none;
+            cursor: pointer;
+            &__ico{
+                color:navegacion.$colorActiveNav;
+                
+                @media screen and (max-width: 800px) {
+                    
+                }
+            }
+        }
+    }
+}
