@@ -34,8 +34,8 @@ function TareaAgregadaMod(props) {
       case 7: return "Agosto";
       case 8: return "Septiembre";
       case 9: return "Octubre";
-      case 11: return "Noviembre";
-      case 12: return "Diciembre";
+      case 10: return "Noviembre";
+      case 11: return "Diciembre";
     }
   }
   const CalcularCaracteres = (e) => {
@@ -50,7 +50,6 @@ function TareaAgregadaMod(props) {
       textTa.value = null;
       inp.value = null;
       setCountCaracteres(0);
-      localStorage.setItem("validarMap", true);
     }
   }
   return (

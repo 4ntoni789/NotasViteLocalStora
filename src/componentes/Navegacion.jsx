@@ -8,7 +8,7 @@ function Navegacion(props) {
     <nav className='contNav'>
       <NavLink className={({ isActive }) => (isActive ? "contNav__link active" : "contNav__link")} to="/"><FontAwesomeIcon icon={faBook}/></NavLink>
       <NavLink className="contNav__link" to="recordatorio"><FontAwesomeIcon icon={faSquareCheck}/></NavLink>
-      <NavLink className="contNav__link" to="options"><FontAwesomeIcon icon={faGear}/></NavLink>
+      <NavLink className="contNav__link contNav__link__options" to="options"><FontAwesomeIcon icon={faGear}/></NavLink>
     </nav>
   );
 }

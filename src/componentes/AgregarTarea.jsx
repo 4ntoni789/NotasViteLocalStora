@@ -49,7 +49,6 @@ function AgregarTarea(props) {
       textTa.value = null;
       inp.value = null;
       setCountCaracteres(0);
-      localStorage.setItem("validarMap", true);
     }
   }
   return (

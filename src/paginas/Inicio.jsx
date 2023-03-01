@@ -36,6 +36,7 @@ function Inicio(props) {
         </div>
       </div> */}
       <BtnNuevo mostrarTare={() => { setValidarMostrarTarea(true) }}/>
+      <div className='contInicio__contItem'>
       {
         almacenTareas.map((t, i) => {
           if (validarMostrarTarea == true || validarMostrarTarea == false) {
@@ -46,6 +47,7 @@ function Inicio(props) {
           }
         })
       }
+      </div>
       <TareaAgregadaMod 
       validar={mostrarTareaModi} 
       close={()=>setMostrarTareaMod(false)}

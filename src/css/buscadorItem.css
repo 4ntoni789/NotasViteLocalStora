@@ -1,0 +1,22 @@
+.buscadorItem {
+  background-color: #333;
+  margin: 10px 0 10px 0;
+  top: 80px;
+  min-height: 60px;
+  min-width: 70%;
+  border-radius: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+.buscadorItem__itemTitulo {
+  color: #eee;
+}
+.buscadorItem__tarea {
+  color: #ccc;
+  margin: 5px 0 5px 0;
+}
+.buscadorItem__fecha {
+  color: #aaa;
+}
+
+/*# sourceMappingURL=buscadorItem.css.map */
