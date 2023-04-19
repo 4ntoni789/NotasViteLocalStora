@@ -14,12 +14,10 @@ function TareaItem(props) {
     const elemento = e.target.parentElement.children[0].textContent;
     setTouchTareaRemove(true);
     let almacenamientoTareas = JSON.parse(localStorage.getItem("Tarea"));
-    for (let i = 0; i < almacenamientoTareas.length; i++) {
-      if (elemento == almacenamientoTareas[i].tituloTarea) {
-        almacenamientoTareas.splice(i, 1);
-      }
-    }
-    localStorage.setItem("Tarea", JSON.stringify(almacenamientoTareas));
+    const newElements = almacenamientoTareas.filter((t) => {
+      return t.tituloTarea !== elemento;
+    });
+    localStorage.setItem("Tarea", JSON.stringify(newElements));
   }
 
   return (
@@ -29,10 +27,11 @@ function TareaItem(props) {
       <p className='contTareaItem__fecha'>{props.fecha}</p>
       <div className={touchTarea == true ? "contTareaItem__btnBorrar__active" : "contTareaItem__btnBorrar"} onClick={(e) => {
         EliminarTarea(e);
-        ()=>props.removeVal()}}>
+        () => props.removeVal()
+      }}>
         x
       </div>
-      <div className={touchTarea == true ? "contTareaItem__btnAbrir__active" : "contTareaItem__btnAbrir"} onClick={()=>props.validarMostrarTareaMod()}>
+      <div className={touchTarea == true ? "contTareaItem__btnAbrir__active" : "contTareaItem__btnAbrir"} onClick={() => props.validarMostrarTareaMod()}>
         M
       </div>
     </div>

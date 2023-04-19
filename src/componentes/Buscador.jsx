@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import "../css/buscador.css";
 import BuscadorItem from './BuscadorItem';
+
 function Buscador(props) {
   const [activarBuscador, setActivarBuscador] = useState(false);
   const [activarBtnEliminarca, setActivarBtnEliminarca] = useState(false);

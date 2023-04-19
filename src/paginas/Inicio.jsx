@@ -27,14 +27,6 @@ function Inicio(props) {
   return (
     <div className='contInicio'>
       <Buscador />
-      {/* <div className='contInicio__BntTodos'>
-        <div className='contInicio__BntTodos__todos'>
-          <h4>Todos</h4>
-        </div>
-        <div className='contInicio__BntTodos__todos'>
-          <FontAwesomeIcon className='contInicio__BntTodos__todos__ico' icon={faFolder} />
-        </div>
-      </div> */}
       <BtnNuevo mostrarTare={() => { setValidarMostrarTarea(true) }}/>
       <div className='contInicio__contItem'>
       {
