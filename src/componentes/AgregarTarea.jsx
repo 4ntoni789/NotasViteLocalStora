@@ -55,7 +55,7 @@ function AgregarTarea(props) {
     <div className={props.validar ? 'contModalAgregarTareaActive' : 'contModalAgregarTarea'}>
       <div className='contModalAgregarTarea__divBtnGuardar'>
         {props.iconoTareaMod ?
-          <FontAwesomeIcon icon={faXmark} onClick={()=>props.validarCloseTareaMod()} /> :
+          <FontAwesomeIcon icon={faXmark} onClick={() => props.validarCloseTareaMod()} /> :
           <FontAwesomeIcon className="contModalAgregarTarea__divBtnGuardar__ico" onClick={(e) => {
             ObtenerInfo(e);
             props.close();
